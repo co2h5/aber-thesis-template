@@ -33,5 +33,6 @@ thesis-main.odt
 thesis-main.docs
 thesis-main.html
 thesis-main_print.pdf
+README.html
 *.swp
 *.ipynb_checkpoints*
