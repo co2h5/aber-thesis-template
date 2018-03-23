@@ -1,48 +1,39 @@
-\documentclass[12pt]{aber-thesis}  % default square logo 
-%\documentclass[12pt,beltcrest]{ociamthesis} % use old belt crest logo
-%\documentclass[12pt,shieldcrest]{ociamthesis} % use older shield crest logo
+\documentclass[12pt]{aber-thesis}
 
 %load any additional packages
-\usepackage{amssymb}
-%\usepackage{fixltx2e}
+\usepackage{amsfonts,amsmath,amssymb,amstext}
+
+\usepackage[hang]{subfigure}
 \usepackage{float}
-% Add fix for float package conflict
-%\makeatletter
-%\let\@tmp\@xfloat
-% End fix
-\usepackage{textcomp}
-\usepackage{gensymb}
+\usepackage{multirow}
+
 \usepackage{graphicx}
 \usepackage{epstopdf}
-\usepackage{color}
-%\usepackage{float}
+
+\usepackage{xcolor}
 \usepackage{fixltx2e}
-% Add fix for float package conflict
-%\let\@tmp\@xfloat
-%\makeatother
-% End fix
-\usepackage{subfig}
-\usepackage{multirow}
-\usepackage{bibentry}
-\nobibliography*
-\usepackage[round]{natbib}
 \usepackage{booktabs}
-\usepackage[font=footnotesize, margin=1cm]{caption}
+
+\usepackage[font=footnotesize,margin=1cm]{caption}
 \captionsetup{labelfont=bf}
 \captionsetup[table]{singlelinecheck=false}
 \graphicspath{{figs/}}
 
-\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
-\setkeys{Gin}{width=0.66\linewidth}
+%\usepackage[sort,authoryear]{natbib}
+\usepackage[sort,numbers]{natbib}
 
-%input macros (i.e. write your own macros file called mymacros.tex 
-%and uncomment the next line)
-%\include{mymacros}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage[all]{nowidow}
+
+\usepackage[linktocpage]{hyperref}
+
+\setkeys{Gin}{width=0.66\linewidth}
 
 \title{My Title \\[1ex]     %your thesis title,
         title title}   %note \\[1ex] is a line break in the title
 
-\author{Joe Bloggs}             %your name
+\author{Author Name}             %your name
 \college{The Department of Physics}  %your college
 
 %\renewcommand{\submittedtext}{change the default text here if needed}
@@ -69,18 +60,16 @@
 \begin{romanpages}          % start roman page numbering
 \tableofcontents            % generate and include a table of contents
 \listoffigures              % generate and include a list of figures
+\listoftables               % generate and include a list of tables	
 \end{romanpages}            % end roman page numbering
 
 %now include the files of latex for each of the chapters etc
-
-	\include{tex/introduction}
-	\include{tex/literature-review}
-	\include{tex/chapter-1}
-	\include{tex/chapter-2}
-	\include{tex/chapter-3}
-	\include{tex/conclusions}
-
-
+\include{tex/chapter-1}
+\include{tex/chapter-2}
+\include{tex/chapter-3}
+\include{tex/chapter-4}
+\include{tex/chapter-5}
+\include{tex/conclusions}
 
 %now enable appendix numbering format and include any appendices
 \appendix
@@ -89,11 +78,8 @@
 
 %next line adds the Bibliography to the contents page
 \addcontentsline{toc}{chapter}{Bibliography}
-%uncomment next line to change bibliography name to references
-%\renewcommand{\bibname}{References}
 
-\bibliography{bib/library.bib}
-\bibliographystyle{plainnat}
+\bibliography{references}
+\bibliographystyle{agsm-mod}
 
 \end{document}
-
