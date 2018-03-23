@@ -1,8 +1,0 @@
-* Small LaTeX tutorial!
-
-** Main commands
-
-
-** Compiling your Latex file
-
-** User-friendly software for Latex editing

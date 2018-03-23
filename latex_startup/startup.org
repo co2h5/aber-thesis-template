@@ -1,0 +1,17 @@
+#+TITLE: Let's start with Latex!
+
+* Small LaTeX tutorial!
+
+This is a very quick introduction to Latex. It is not an exhaustive guide but it is a collection of useful links. Let's start with an introduction about Latex! What is it? [[http://en.wikipedia.org/wiki/LaTeX][Here]] is the answer!
+
+** User-friendly software for Latex editing
+
+   Many =versions=, called distributions are [[http://www.tug.org/interest.html#free][available]] for Latex. One of the most used is TexLive that can be downloaded [[http://www.tug.org/texlive/acquire-netinstall.html][here]]. Installation instructions can be found [[http://www.tug.org/texlive/windows.html][here]] for Windows and [[http://www.tug.org/texlive/quickinstall.html][here]] for all the other operating systems. If you use Linux, you should use the distribution which is included in the repository and [[https://tug.org/texlive/distro.html][this page]] could help.
+
+   Once you successfully installed Latex, it's time to install an user-friendly editor! The best editor it's matter of personal taste but one of the most impressive is [[https://en.wikipedia.org/wiki/TeXstudio][TeXstudio]] which can be downloaded [[https://www.texstudio.org][here]].
+
+** TODO Main commands
+
+** TODO Compiling your Latex file
+
+** TODO Less user-friendly software!
